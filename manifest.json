@@ -1,23 +1,9 @@
 {
-    "name": "Well, well, well...",
-    "description": "A google chrome extension for reminders",
-    "version": "1.0",
-    "manifest_version": 3,
-    "icons": {
-        "16": "./icons/img1.jpg",
-        "48": "./icons/img2.jpg",
-        "128": "./icons/img3.jpg"
-    },
-    "action": {
-        "default_icon": {
-            "16": "./icons/img1copy.jpg",
-            "48": "./icons/img2copy.jpg",
-            "128": "./icons/img3copy.jpg"
-        }
-    },
+    "manifest_version": 2,
+    "name": "Well-Well-Well",
+    "version": "0.1",
     "content_scripts": [{
-        "matches": ["https://www.google.com/*"],
-        "css": ["styles.css"],
-        "js": ["scripts.js"]
+        "matches": ["<all_urls>"],
+        "js": ["prompts.js"]
     }]
 }
