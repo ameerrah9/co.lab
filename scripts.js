@@ -11,3 +11,31 @@
 //     </div>
 //     `
 // }, 1000);
+
+// LETCODE TUTORIAL
+// function notification () {
+//     chrome.notifications.create(
+//         {
+//             title: 'Well, well, well',
+//             message: 'How is your day going?',
+//             iconUrl: './images/icon.png',
+//             type: 'basic'
+//         }
+//     )
+// }
+
+// notification();
+
+// CODEDAMN TUTORIAL
+const options = {
+    type: 'basic',
+    title: 'Take Care',
+    message: 'Take Care notification',
+    iconUrl: './images/icon.png'
+}
+
+chrome.notifications.create(options, callback);
+
+function callback() {
+    console.log("popup working");
+}
