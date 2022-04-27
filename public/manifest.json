@@ -1,0 +1,15 @@
+{
+    "name": "Take Care 2",
+    "description": "Gentle Mental Health Reminders",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Open the popup"
+    },
+    "icons": {
+        "16": "well-well-well.png",
+        "48": "well-well-well.png",
+        "128": "well-well-well.png"
+    }
+}
