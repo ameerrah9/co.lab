@@ -1,7 +1,7 @@
 import logo from './well-well-well.png';
 
 import './App.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import realtime from "./firebase.js";
 import { ref, onValue } from 'firebase/database';
 
@@ -12,10 +12,10 @@ function App() {
     const databaseRef = ref(realtime);
 
     onValue(databaseRef, function(snapshot) {
-      const myData = snapshot.val();
+      const prompts = snapshot.val();
 
-      console.log(myData);
-      
+      console.log(prompts);
+
     })
   })
   return (
