@@ -1,8 +1,23 @@
 import logo from './well-well-well.png';
 
 import './App.css';
+import { useState, useEffect, useRef } from 'react';
+import realtime from "./firebase.js";
+import { ref, onValue } from 'firebase/database';
 
 function App() {
+  const [prompts, setPrompts] = useState([]);
+
+  useEffect(function() {
+    const databaseRef = ref(realtime);
+
+    onValue(databaseRef, function(snapshot) {
+      const myData = snapshot.val();
+
+      console.log(myData);
+      
+    })
+  })
   return (
     <div className='App'>
       <div class='title'>
