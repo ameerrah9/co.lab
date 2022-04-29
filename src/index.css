@@ -1,0 +1,81 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 337px;
+    height: 348px;
+    background: #fcf9ff;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+.container {
+    padding: 0px 15px 10px 15px;
+}
+
+.prompt {
+    border-radius: 5px;
+    padding: 35px 10px;
+    width: auto;
+    height: 20%;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    color: #170624;
+    text-align: center;
+    background: rgba(238, 216, 255, 0.48);
+    border-radius: 5px;
+}
+
+.settings {
+    font-size: 13.5px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #170624;
+    font-weight: 700;
+}
+
+.toggle {
+    font-size: 13.5px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #170624;
+}
+
+.title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    flex-direction: row;
+    font-size: 20px;
+    padding-top: 0;
+    font-weight: 600;
+    font-size: 13.5px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #170624;
+}
+
+.setting-wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+p {
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+}
+
+img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.5rem;
+    opacity: 0.9;
+}
