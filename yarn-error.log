@@ -1,0 +1,77 @@
+Arguments: 
+  /Users/gmccullers/.nvm/versions/node/v16.15.0/bin/node /usr/local/Cellar/yarn/1.22.18/libexec/bin/yarn.js
+
+PATH: 
+  /Users/gmccullers/.rvm/gems/ruby-2.7.2/bin:/Users/gmccullers/.rvm/gems/ruby-2.7.2@global/bin:/Users/gmccullers/.rvm/rubies/ruby-2.7.2/bin:/Users/gmccullers/.nvm/versions/node/v16.15.0/bin:/Users/gmccullers/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/gmccullers/.rvm/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@testing-library%2freasct: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:66138:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:140883:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141855:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+      "name": "take-care-app",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+          "@material-ui/core": "^4.12.4",
+          "@material-ui/icons": "^4.11.3",
+          "@material-ui/lab": "^4.0.0-alpha.61",
+          "@testing-library/jest-dom": "^5.16.4",
+          "@testing-library/reasct": "^13.1.1",
+          "@testing-library/user-event": "^13.5.0",
+          "firebase": "^9.7.0",
+          "react": "^18.1.0",
+          "react-dom": "^18.1.0",
+          "react-scripts": "5.0.1",
+          "web-vitals": "^2.1.4"
+      },
+      "scripts": {
+          "start": "react-scripts start",
+          "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
+          "test": "react-scripts test",
+          "eject": "react-scripts eject"
+      },
+      "eslintConfig": {
+          "extends": [
+              "react-app",
+              "react-app/jest"
+          ]
+      },
+      "browserslist": {
+          "production": [
+              ">0.2%",
+              "not dead",
+              "not op_mini all"
+          ],
+          "development": [
+              "last 1 chrome version",
+              "last 1 firefox version",
+              "last 1 safari version"
+          ]
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

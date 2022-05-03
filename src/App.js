@@ -7,7 +7,7 @@ import realtime from "./firebase.js";
 import { ref, onValue } from 'firebase/database';
 
 function App() {
-  const [prompts, setPrompts] = useState([]);
+  const [prompts, setPrompts] = useState();
 
   useEffect(function() {
     const databaseRef = ref(realtime);
