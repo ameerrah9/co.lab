@@ -61,8 +61,6 @@ function App() {
       } else {
         setPrompts(randomGen)
       }
-
-      console.log(randomEOD);
     })
   })
 
