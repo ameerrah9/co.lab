@@ -6,8 +6,17 @@ import Switch from '@material-ui/core/Switch';
 import realtime from "./firebase.js";
 import { ref, onValue } from 'firebase/database';
 
-function App() {
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const App = () => {
+
   const [prompts, setPrompts] = useState();
+
+  const notify = () => {
+    console.log('toast working');
+    toast(prompts);
+  }
 
   useEffect(function() {
     const databaseRef = ref(realtime);
@@ -85,7 +94,9 @@ function App() {
         </div>
         <div className='toggle'>
           <p>Mindfulness notifications</p>
-      <Switch defaultChecked />
+          {/* <button onClick={notify}>Click</button> */}
+          <ToastContainer />
+      <Switch onClick={notify} defaultChecked />
         </div>
       </div>
     </div>
